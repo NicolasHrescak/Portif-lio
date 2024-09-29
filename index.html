@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu Portfólio Futurista</title>
+    <!-- Fonte JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        /* Gradiente Animado */
+        .animated-gradient {
+            background: linear-gradient(270deg, #ff00ff, #00f0ff, #00ff6a, #ff00c8);
+            background-size: 600% 600%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        /* Definindo animação do gradiente */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+<!-- Cabeçalho -->
+<header class="bg-gray-900 text-gray-300 py-4 px-8 shadow-lg fixed w-full">
+    <nav class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-pink-500">Portfólio</h1>
+        <ul class="flex space-x-8">
+            <li><a href="#projetos" class="hover:text-blue-400">Projetos</a></li>
+            <li><a href="#experiencias" class="hover:text-blue-400">Experiências</a></li>
+            <li><a href="mailto:felixnicolas283@gmail.com" class="hover:text-blue-400">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Seção de Introdução com Gradiente Animado -->
+<section class="h-screen animated-gradient flex items-center justify-center text-center px-4">
+    <div class="bg-gray-900 bg-opacity-80 p-8 rounded-lg">
+        <h2 class="text-5xl font-bold mb-4 text-gray-300">Olá, eu sou <span class="text-green-400">Nicolas</span></h2>
+        <p class="text-xl text-gray-300">Desenvolvedor de Software e estudante de <span class="text-purple-400">Ciência da Computação</span>.</p>
+        <p class="mt-6 text-lg text-gray-300">Sou apaixonado por tecnologia, matemática e física!<br>
+            E estou sempre buscando saber mais sobre todos os universos.<br> Aqui estão alguns projetos <span class="text-pink-400">incríveis e futuristas</span>.</p>
+        <a href="#projetos" class="mt-8 inline-block bg-green-400 hover:bg-green-500 text-gray-900 font-bold py-2 px-4 rounded">Ver Projetos</a>
+    </div>
+</section>
+
+<!-- Seção de Projetos com Cartões Coloridos -->
+<section id="projetos" class="bg-gray-800 py-16 px-8">
+    <h2 class="text-4xl font-bold text-blue-400 text-center mb-12">Meus Projetos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Projeto 1 -->
+        <div class="bg-gray-900 text-gray-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-green-400">
+            <h3 class="text-xl font-bold text-pink-500 mb-2">Controle de tráfego Aéreo</h3>
+            <p>Simulador de inteligência artificial para calcular previsão de pouso </p>
+            <p class="mt-4 text-sm">Utiliza-se um sistema de interferência baseada em possíveis situações que podem ocorrer durante o voo.</p>
+            <a href="https://github.com/NicolasHrescak/Airplane-Controller" class="text-blue-400 hover:text-blue-500 mt-4 inline-block">Ver projeto no GitHub</a>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="bg-gray-900 text-gray-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-blue-400">
+            <h3 class="text-xl font-bold text-pink-500 mb-2">Minecraft Iot Interface</h3>
+            <p>Sistema de integração de Iot com o jogo Minecraft </p>
+            <p class="mt-4 text-sm">Utilizando objetos do dia-a-dia para sincronizar com ações do jogo em tempo real.</p>
+            <a href="https://github.com/NicolasHrescak/Minecraft-Iot-Interface" class="text-blue-400 hover:text-blue-500 mt-4 inline-block">Ver projeto no GitHub</a>
+        </div>
+
+        <div class="bg-gray-900 text-gray-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-blue-400">
+            <h3 class="text-xl font-bold text-pink-500 mb-2">Crazy Cat Gang</h3>
+            <p> Página para instituição de resgate de gatos</p>
+            <p class="mt-4 text-sm">Web Page voluntária afim de ajudar a otimizar o sistema da ONG beneficente Crazy Cat Gang, utilizou-se HTML, CSS, JavaScript e Bootstrap para criar uma página fluida e intuitiva que suprisse a problemática de contratação da ONG.</p>
+            <a href="https://github.com/NicolasHrescak/Crazy-Cat-Gang" class="text-blue-400 hover:text-blue-500 mt-4 inline-block">Ver projeto no GitHub</a>
+        </div>
+
+        <div class="bg-gray-900 text-gray-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-blue-400">
+            <h3 class="text-xl font-bold text-pink-500 mb-2">Bolsa de Valores com Iot e API</h3>
+            <p>Integração de software e API com um sistema Iot para verificão de mudanças na bolsa de valores</p>
+            <p class="mt-4 text-sm">Utilizou-se a API Alpha-Vantage e o sistema de Iot ESP-32 com python e micropython para as conexoes.</p>
+            <a href="https://github.com/NicolasHrescak/Stock-Exchange-Verification-API-IOT" class="text-blue-400 hover:text-blue-500 mt-4 inline-block">Ver projeto no GitHub</a>
+        </div>
+
+        <div class="bg-gray-900 text-gray-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-blue-400">
+            <h3 class="text-xl font-bold text-pink-500 mb-2">Backend Cinema Interface</h3>
+            <p>Sistema de controle de ocupação de cadeiras de cinema com manipulação e criação de arquivos para registro</p>
+            <p class="mt-4 text-sm">Utilizou-se a linguagem C com ponteiros, alocação de memória, switch e arquivos.</p>
+            <a href="https://github.com/NicolasHrescak/Backend-Cinema-Interface" class="text-blue-400 hover:text-blue-500 mt-4 inline-block">Ver projeto no GitHub</a>
+        </div>
+
+        <div class="bg-gray-900 text-gray-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-blue-400">
+            <h3 class="text-xl font-bold text-pink-500 mb-2">E-comerce (Em desenvolvimento)</h3>
+            <p>Site e sistema de e-comerce completo</p>
+            <p class="mt-4 text-sm">HTML, CSS, JavaScript, servidor Vite e Tailwind CSS para criar um e-comerce completo e moderno.</p>
+            <a href="https://github.com/NicolasHrescak/E-commerce-Hashtag" class="text-blue-400 hover:text-blue-500 mt-4 inline-block">Ver projeto no GitHub</a>
+        </div>
+
+        <!-- Adicione outros projetos aqui -->
+    </div>
+</section>
+
+<section id="projetos" class="bg-gray-900 py-16 px-8">
+    <h2 class="text-4xl font-bold text-blue-400 text-center mb-12">Artigos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-gray-800 text-gray-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-blue-400">
+            <h3 class="text-xl font-bold text-pink-500 mb-2">Eficência do GPT 3.5 com problemas</h3>
+            <p>Análise Técnica sobre o desempenho da tecnologia GPT-3.5 na resolução de problemas ligados a estrutura de dados e a programação de algoritmos</p>
+            <a href="https://github.com/NicolasHrescak/Artigo-GPT-3.5" class="text-blue-400 hover:text-blue-500 mt-4 inline-block">Ver artigo no GitHub</a>
+        </div>
+
+        <div class="bg-gray-800 text-gray-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-blue-400">
+            <h3 class="text-xl font-bold text-pink-500 mb-2">Sistema Operacional MacOS</h3>
+            <p>Pesquisa técnica acerca do gerenciamento de recursos e funcionalidades do sistema operacional MacOS</p>
+            <a href="https://github.com/NicolasHrescak/PesquisaT-cnica-MacOS" class="text-blue-400 hover:text-blue-500 mt-4 inline-block">Ver artigo no GitHub</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Seção de Experiências -->
+<section id="experiencias" class="bg-gray-800 py-16 px-8 text-gray-300">
+    <h2 class="text-4xl font-bold text-purple-400 text-center mb-12">Minhas Experiências</h2>
+    <div class="space-y-8">
+        <!-- Experiência 1 -->
+        <div class="border-l-4 border-green-400 pl-4">
+            <h3 class="text-2xl font-bold text-green-400">Santander - Trilha de Desenvolvimento Backend</h3>
+            <p class="text-sm">Curso de desenvolvimento backend completo com Java, Orientação a Objetos, Banco de dados e Redes</p>
+        </div>
+
+        <!-- Experiência 2 -->
+        <div class="border-l-4 border-blue-400 pl-4">
+            <h3 class="text-2xl font-bold text-pink-500">UTFPR - Ciência da Computação</h3>
+            <p class="text-sm">Realizado um ano do curso de graduação de Ciência da Computação.</p>
+        </div>
+
+        <div class="border-l-4 border-blue-400 pl-4">
+            <h3 class="text-2xl font-bold text-blue-400">PUCPR - Ciência da Computação</h3>
+            <p class="text-sm">Graduação atual no curso de Ciência da Computação.</p>
+        </div>
+
+        <div class="border-l-4 border-blue-400 pl-4">
+            <h3 class="text-2xl font-bold text-red-400">UNICAMP - Olimpíada Brasileira de Informática </h3>
+            <p class="text-sm">Participação na competição nacional de programação do ano de 2023.</p>
+        </div>
+
+        <!-- Adicione outras experiências aqui -->
+    </div>
+</section>
+
+
